@@ -12,3 +12,5 @@ To win the game, the numbers need to be put into numerical order.
         Select 1. When rotated, the sub-grid will look like this:
         3 1
         4 2
+
+Created using Nexus 9 API 28 portrait view.
