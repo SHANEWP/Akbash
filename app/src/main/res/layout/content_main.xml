@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/logoWidth"
+        android:layout_height="@dimen/logoHeight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/moveCount"
+        app:srcCompat="@drawable/akbash_icon"
+        />
+
+    <TextView
+        android:id="@+id/moveCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/moveCountTextSize"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/buttonGrid"
+        />
+
+    <Button
+        android:id="@+id/musicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:text="@string/music"
+        android:onClick="musicClick"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/infoButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shuffleButton"
+        />
+    <Button
+        android:id="@+id/shuffleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shuffle"
+        android:onClick="shuffleClick"
+        android:background="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintBottom_toTopOf="@id/infoButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGrid" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:onClick="showInfo"
+        android:background="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="@dimen/buttonTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/musicButton"
+        app:layout_constraintTop_toBottomOf="@id/shuffleButton" />
+
+    <GridLayout
+        android:id="@+id/buttonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:rowCount="6"
+        app:layout_constraintBottom_toTopOf="@id/shuffleButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moveCount"
+        >
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button27"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button33"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button34"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+        <Button
+            android:id="@+id/button35"
+            android:layout_width="@dimen/gridButtonWidth"
+            android:layout_height="@dimen/gridButtonHeight"
+            android:onClick="gameBoardClick"
+            android:background="@color/buttonColor"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="@dimen/buttonTextSize"/>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

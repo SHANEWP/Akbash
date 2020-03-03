@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="gridButtonHeight">80dp</dimen>
+    <dimen name="gridButtonWidth">80dp</dimen>
+    <dimen name="buttonTextSize">30sp</dimen>
+    <dimen name="logoWidth">300dp</dimen>
+    <dimen name="logoHeight">175dp</dimen>
+    <dimen name="moveCountTextSize">25sp</dimen>
+</resources>

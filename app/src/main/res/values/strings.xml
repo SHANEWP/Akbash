@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Akbash</string>
+    <string name="action_settings">Settings</string>
+    <string name="youWin">You win!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
+    <string name="info">Info</string>
+    <string name="music">Music</string>
+    <string name="gameInfo">Welcome to Akbash!\n
+        To win the game, the numbers need to be put in order.\n
+        The board order is as follows:\n\n
+        01 02 03 04 05 06\n
+        07 08 09 10 11 12\n
+        13 14 15 16 17 18\n
+        19 20 21 22 23 24\n
+        25 26 27 28 29 30\n
+        31 32 33 34 35 36\n\n
+        To play, rotate a 2x2 sub-grid by selecting the top left number.\n\n
+        Example: \n\n
+        1 2\n
+        3 4\n\n
+        Select 1. When rotated, the sub-grid will look like this:\n\n
+        3 1\n
+        4 2\n\n
+        Enjoy!</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="shuffleConfirmation">Would you like to shuffle the board?</string>
+</resources>
